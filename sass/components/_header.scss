@@ -1,0 +1,119 @@
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+}
+.title {
+  margin-right: 93px;
+
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.title-part {
+  color: var(--title-text-color);
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu .nav-menu__item:not(:last-child) {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  .active-link {
+    color: var(--accent-color);
+ }
+
+  &::after,
+  .active-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0.3);
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    opacity: 0;
+    transition: transform 250ms, opacity 250ms;
+  }
+}
+
+.nav-menu__link:hover::after,
+.nav-menu__link:focus::after,
+.active-link::after {
+  transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.contacts__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+
+  fill: currentColor;
+  display: flex;
+  padding-left: 10px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+}
+}
+
+
+.contacts__link span {
+  padding-left: 10px;
+}
+
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} 
