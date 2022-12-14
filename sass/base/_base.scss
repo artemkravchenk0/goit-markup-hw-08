@@ -1,9 +1,11 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Roboto, sans-serif;
-    color: var(--primary-text-color);
-    
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+}
+.mobile-menu .link.active {
+  color: var(--accent-color);
+}
