@@ -443,7 +443,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 480px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -478,14 +477,10 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_L@2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
   }
 }
 
