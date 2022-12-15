@@ -118,14 +118,15 @@ align-items: baseline;
   flex-direction: column;
   align-items:center;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
   @media screen and (min-width:767px){
    flex-direction: initial;
-  //  @media screen and (min-width:1200px) {
-    
-  //  }
-  
   }
+  @media screen and (min-width:1200px) {
+    margin: 0;
+  }
+  
+  
 
   align-items: baseline;
 }
@@ -195,7 +196,10 @@ align-items: baseline;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-ftr__form {
-  width: 450px;
+  @media screen and (min-width:480px) {
+    width: 450px;
+  }
+  
   @media screen and (min-width:1200px) {
     width: 358px;
   }
