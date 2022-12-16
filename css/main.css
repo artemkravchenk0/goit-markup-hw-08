@@ -1111,6 +1111,8 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
